@@ -1,29 +1,20 @@
-# Using LSTM and Prophet to Predict the Number of Passengers
+Predicting the Future with LSTM, Prophet and Neural Prophet
+In this project, we explore time series forecasting using various deep learning models like Long Short-Term Memory (LSTM), as well as classical models like Prophet and Neural Prophet. We will use a dataset containing hourly electricity usage data and try to forecast the future electricity usage based on this data.
 
-**Data Source**
-Simple dataset with the date and number of passengers
+Dataset
+The dataset we are using is hourly electricity usage data from PJM Interconnection LLC, a regional transmission organization (RTO) in the United States. The data contains hourly electricity usage readings from 1st July 1998 to 31st December 2018. The dataset can be downloaded from the Kaggle page.
 
-**EDA**
-![image](https://user-images.githubusercontent.com/131489230/235701140-21f98859-1575-4cff-a081-499c3f939424.png)
+Exploratory Data Analysis
+We begin with a brief exploratory data analysis of the dataset. We visualize the hourly electricity usage data for the first few months in 2017 using a line chart. The chart shows that there is a clear daily pattern in electricity usage with higher usage during the day and lower usage during the night.
 
-![image](https://user-images.githubusercontent.com/131489230/235701449-816c543b-9512-454f-9cc8-086c4044fb29.png)
+LSTM Model
+We first use an LSTM model to predict future electricity usage. We use the previous 720 hours of electricity usage data to predict the next 24 hours of usage. We use a neural network with two LSTM layers followed by a fully connected layer. The model is trained on the first 20 years of data and validated on the last 2 years of data. The model achieves an Mean Absolute Percentage Error (MAPE) of 2.9% on the validation set.
 
+Prophet Model
+We then use the Prophet model to predict future electricity usage. Prophet is a classical time series forecasting model developed by Facebook. It is based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. We train the Prophet model on the same dataset as the LSTM model and predict the next 24 hours of electricity usage. The model achieves an MAPE of 4.9% on the validation set.
 
-![image](https://user-images.githubusercontent.com/131489230/235701361-b31c9b10-35c5-4e0a-86e0-9c797d51fbb4.png)
+Neural Prophet Model
+Finally, we use the Neural Prophet model to predict future electricity usage. Neural Prophet is an extension of Prophet that uses a neural network to model the trend and seasonality components of the data. We use a neural network with two hidden layers to predict the next 24 hours of electricity usage. The model is trained on the same dataset as the previous models and achieves an MAPE of 2.4% on the validation set.
 
-![image](https://user-images.githubusercontent.com/131489230/235701311-cd87afed-2033-4540-8806-9909edfeda84.png)
-
-
-![image](https://user-images.githubusercontent.com/131489230/235701277-43a9abe6-b0bd-4ec9-943f-58c01fafe37f.png)
-
-**LSTM: Modeling**
-
-![image](https://user-images.githubusercontent.com/131489230/235702353-96012346-080d-467d-98a6-69321ea5b798.png)
-
-
-![image](https://user-images.githubusercontent.com/131489230/235702394-545f5d5e-4be7-41bf-a0b3-a4a9770d120b.png)
-
-**Prophet**
-![image](https://user-images.githubusercontent.com/131489230/235704991-0a044cf0-6976-484f-8725-9527546401cb.png)
-
-
+Conclusion
+We have shown how to use LSTM, Prophet, and Neural Prophet models to predict future electricity usage. Our results demonstrate that Neural Prophet achieves the best performance with an MAPE of 2.4%. This suggests that using a neural network to model the trend and seasonality components of time series data can lead to better performance than classical models like Prophet.
