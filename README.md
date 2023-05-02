@@ -1,4 +1,4 @@
-# Predicting the Future with LSTM, Prophet and Neural Prophet
+# Predicting the Future with XGBoost, LSTM, and Prophet
 In this project, we explore time series forecasting using various machine learning models like XGBoost, Long Short-Term Memory (LSTM), as well as classical models like Prophet. We will use a dataset containing hourly electricity usage data and try to forecast the future electricity usage based on this data.
 
 **Dataset**   <br>
