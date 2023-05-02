@@ -16,5 +16,5 @@ We then use the Prophet model to predict future electricity usage. Prophet is a 
 **Neural Prophet Model**   <br>
 Finally, we use the Neural Prophet model to predict future electricity usage. Neural Prophet is an extension of Prophet that uses a neural network to model the trend and seasonality components of the data. We use a neural network with two hidden layers to predict the next 24 hours of electricity usage. The model is trained on the same dataset as the previous models and achieves an MAPE of 2.4% on the validation set.
 
-**Conclusion**   <br>
+**Conclusion**   <br> jl
 We have shown how to use LSTM, Prophet, and Neural Prophet models to predict future electricity usage. Our results demonstrate that Neural Prophet achieves the best performance with an MAPE of 2.4%. This suggests that using a neural network to model the trend and seasonality components of time series data can lead to better performance than classical models like Prophet.
