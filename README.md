@@ -17,5 +17,5 @@ We first use an LSTM model to predict future electricity usage. We use the previ
 We then use the Prophet model to predict future electricity usage. Prophet is a classical time series forecasting model developed by Facebook. It is based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. We train the Prophet model on the same dataset as the LSTM model and predict the next 24 hours of electricity usage. The model achieves an MAPE of 4.9% on the validation set.
 
 
-**Conclusion**   <br>
+**Conclusion**   <br> jkl
 We have shown how to use XGBoost, LSTM, Prophet, and Neural Prophet models to predict future electricity usage. Our results demonstrate that Neural Prophet achieves the best performance with an MAPE of 2.4%. This suggests that using a neural network to model the trend and seasonality components of time series data can lead to better performance than classical models like Prophet.
