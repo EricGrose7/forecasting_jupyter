@@ -2,7 +2,7 @@
 In this project, we explore time series forecasting using various deep learning models like Long Short-Term Memory (LSTM), as well as classical models like Prophet and Neural Prophet. We will use a dataset containing hourly electricity usage data and try to forecast the future electricity usage based on this data.
 
 **Dataset**   <br>
-The dataset we are using is hourly electricity usage data from PJM Interconnection LLC, a regional transmission organization (RTO) in the United States. The data contains hourly electricity usage readings from 1st July 1998 to 31st December 2018. The dataset can be downloaded from the Kaggle [page] (https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption).
+The dataset we are using is hourly electricity usage data from PJM Interconnection LLC, a regional transmission organization (RTO) in the United States. The data contains hourly electricity usage readings from 1st July 1998 to 31st December 2018. The dataset can be downloaded from the [Kaggle page](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption).
 
 **Exploratory Data Analysis**   <br>
 We begin with a brief exploratory data analysis of the dataset. We visualize the hourly electricity usage data for the first few months in 2017 using a line chart. The chart shows that there is a clear daily pattern in electricity usage with higher usage during the day and lower usage during the night.
