@@ -1,7 +1,7 @@
 # Predicting the Future with LSTM, Prophet and Neural Prophet
 In this project, we explore time series forecasting using various deep learning models like Long Short-Term Memory (LSTM), as well as classical models like Prophet and Neural Prophet. We will use a dataset containing hourly electricity usage data and try to forecast the future electricity usage based on this data.
 
-**Dataset**
+**Dataset** \n
 The dataset we are using is hourly electricity usage data from PJM Interconnection LLC, a regional transmission organization (RTO) in the United States. The data contains hourly electricity usage readings from 1st July 1998 to 31st December 2018. The dataset can be downloaded from the Kaggle page.
 
 **Exploratory Data Analysis**
